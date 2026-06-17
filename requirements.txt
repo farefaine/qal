@@ -1,0 +1,28 @@
+# Data processing and visualization
+pandas>=2.0.0
+matplotlib>=3.7.0
+wordcloud>=1.9.2
+
+# Deep learning and ML
+torch>=2.0.0
+transformers>=4.30.0
+tokenizers>=0.13.0
+datasets>=2.12.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# Experiment tracking
+wandb>=0.15.0
+
+# Jupyter notebooks
+ipykernel>=6.0.0
+
+# API serving
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+
+pyyaml>=6.0.0
+
