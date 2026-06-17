@@ -62,6 +62,6 @@ The pipeline prints a full summary on completion including sentence counts and d
 
 ## Coming Soon
 
-- `dataset.py` — PyTorch `TigrinyaDataset` and memory-mapped dataset for training
-- `dataloader.py` — DataLoader factories
-- `dataset_stats.py` — Statistics, vocabulary analysis, and visualizations
+- `dataset.py`: PyTorch `TigrinyaDataset` and memory-mapped dataset for training
+- `dataloader.py`: DataLoader factories
+- `dataset_stats.py`: Statistics, vocabulary analysis, and visualizations

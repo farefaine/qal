@@ -1,6 +1,6 @@
 # datasets/
 
-This directory holds raw and processed data. All data files are gitignored — only this README is tracked.
+This directory holds raw and processed data. All data files are gitignored. Only this README is tracked.
 
 ## Raw Data
 
