@@ -7,7 +7,7 @@ Tigrinya language model pretraining: data pipeline, tokenization, training, and 
 | Phase | Module | Status |
 |---|---|---|
 | 1 | `data/` | ✅ Complete |
-| 2 | `tokenization/` | Coming soon |
+| 2 | `tokenization/` | ✅ Complete |
 | 3 | `model/` | Coming soon |
 | 4 | `training/` | Coming soon |
 | 5 | `inference/` | Coming soon |
@@ -44,6 +44,7 @@ Output is written to `datasets/training/`: ~2.4M training sentences, ~25K valida
 qal/
 ├── data/           # Data pipeline (Phase 1)
 ├── datasets/       # Raw and processed data (gitignored, see datasets/README.md)
+├── artifacts/      # Generated outputs (gitignored except README docs)
 ├── tokenization/   # Tokenizer training and analysis
 ├── model/          # Model architecture
 ├── training/       # Training loop and configuration
@@ -56,7 +57,16 @@ qal/
 
 See [data/README.md](data/README.md) for full pipeline documentation.
 
+## Tokenization
+
+See [tokenization/README.md](tokenization/README.md) for tokenizer training documentation.
+
 ## Learn More
 
-- Project write-up: [fanus.dev/projects/qal](https://fanus.dev/projects/qal)
-- Technical series: [farefaine.substack.com](https://farefaine.substack.com)
+- Project motivation: [Building Qal: A Tiny Language Model for Tigrinya](https://farefaine.substack.com/p/17-building-qal-a-tiny-language-model)
+- Data collection and cleaning: [Building Qal: Collecting and Cleaning Tigrinya Text](https://farefaine.substack.com/p/27-building-qal-collecting-and-cleaning)
+
+## Connect
+
+- Website: [fanus.dev](https://fanus.dev)
+- Substack: [farefaine.substack.com](https://farefaine.substack.com)
