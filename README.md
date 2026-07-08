@@ -70,3 +70,4 @@ See [tokenization/README.md](tokenization/README.md) for tokenizer training docu
 
 - Website: [fanus.dev](https://fanus.dev)
 - Substack: [farefaine.substack.com](https://farefaine.substack.com)
+- LinkedIn: [linkedin.com/in/fanus-arefaine](https://www.linkedin.com/in/fanus-arefaine/)
