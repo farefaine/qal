@@ -25,7 +25,17 @@ datasets/*
 *.hdf5
 
 # Model artifacts & checkpoints
-artifacts/
+artifacts/*
+!artifacts/README.md
+!artifacts/tokenizers/
+artifacts/tokenizers/*
+!artifacts/tokenizers/README.md
+!artifacts/tokenizers/hf_bpe/
+artifacts/tokenizers/hf_bpe/*
+!artifacts/tokenizers/hf_bpe/README.md
+!artifacts/tokenizers/from_scratch/
+artifacts/tokenizers/from_scratch/*
+!artifacts/tokenizers/from_scratch/README.md
 *.pt
 *.pth
 *.ckpt
