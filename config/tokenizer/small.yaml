@@ -1,0 +1,17 @@
+# Tokenizer training config - 8K vocabulary
+
+tokenizer:
+  vocab_size: 8192
+  min_frequency: 2
+  model_type: "bpe"
+
+  special_tokens:
+    unk: "[UNK]"
+    pad: "[PAD]"
+
+  train_files:
+    - "datasets/training/train.txt"
+
+  tokenizer_path: "artifacts/tokenizers/tigrinya_tokenizer_8k.json"
+  batch_size: 4096
+

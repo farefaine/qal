@@ -1,0 +1,17 @@
+# Tokenizer training config - 32K vocabulary
+
+tokenizer:
+  vocab_size: 32768
+  min_frequency: 2
+  model_type: "bpe"
+
+  special_tokens:
+    unk: "[UNK]"
+    pad: "[PAD]"
+
+  train_files:
+    - "datasets/training/train.txt"
+
+  tokenizer_path: "artifacts/tokenizers/tigrinya_tokenizer_32k.json"
+  batch_size: 4096
+
