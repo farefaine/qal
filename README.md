@@ -8,7 +8,7 @@ Tigrinya language model pretraining: data pipeline, tokenization, training, and 
 |---|---|---|
 | 1 | `data/` | ✅ Complete |
 | 2 | `tokenization/` | ✅ Complete |
-| 3 | `model/` | Coming soon |
+| 3 | `model/` | Architecture implemented and published |
 | 4 | `training/` | Coming soon |
 | 5 | `inference/` | Coming soon |
 
@@ -47,8 +47,8 @@ qal/
 ├── artifacts/      # Generated outputs (gitignored except README docs)
 ├── tokenization/   # Tokenizer training and analysis
 ├── model/          # Model architecture
-├── training/       # Training loop and configuration
-├── inference/      # Inference and serving
+├── training/       # Training loop and configuration (coming soon)
+├── inference/      # Inference and serving (coming soon)
 ├── notebooks/      # Exploration and analysis
 └── config/         # Configuration files
 ```
@@ -60,6 +60,13 @@ See [data/README.md](data/README.md) for full pipeline documentation.
 ## Tokenization
 
 See [tokenization/README.md](tokenization/README.md) for tokenizer training documentation.
+
+## Model Architecture
+
+Qal uses a GPT-2-style decoder-only transformer implemented in PyTorch.
+The architecture is published; training code and trained weights are not included in this release.
+
+See [model/README.md](model/README.md) for the components, an example configuration, and usage.
 
 ## Learn More
 

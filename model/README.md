@@ -1,6 +1,9 @@
 # Model Architecture
 
-A GPT-style decoder-only transformer implementation in PyTorch.
+A GPT-2-style decoder-only transformer implementation in PyTorch.
+
+This release provides the architecture. Models start with random weights;
+trained weights are not included.
 
 ## Overview
 
@@ -27,9 +30,20 @@ GPT
 | `LayerNorm` | Layer normalization with learnable scale and shift. |
 | `GELU` | Gaussian Error Linear Unit activation function. |
 
+## Design Choices
+
+- Learned token and absolute positional embeddings are added before the transformer blocks.
+- Each block uses pre-norm residual connections and a 4× feed-forward network with tanh-approximate GELU.
+- LayerNorm uses an epsilon of `1e-5`.
+- The input embedding and output head have separate weights (untied), unlike GPT-2.
+- Q/K/V projection biases are configurable through `qkv_bias`; the example below disables them, unlike GPT-2.
+- The output head is bias-free and returns raw logits for every input position.
+
 ## Configuration
 
-The model is configured via a dictionary (values depend on model size):
+The model is configured via a dictionary. These values illustrate how to instantiate
+the architecture; they are not a finalized training configuration. Model sizing
+will be covered with the training experiments.
 
 ```python
 cfg = {                       

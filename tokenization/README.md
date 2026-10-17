@@ -8,7 +8,7 @@ BPE tokenizer training for Tigrinya language models.
 tokenization/
 ├── hf_bpe/
 │   ├── train.py          # Production trainer (HuggingFace tokenizers)
-│   └── metrics.py        # Tokenizer analysis utilities
+│   └── metrics.py        # Tokenizer analysis utilities (not yet published)
 └── from_scratch/
     ├── bpe.py            # From-scratch BPE implementation
     └── train.py          # Training script for from-scratch BPE
@@ -97,15 +97,16 @@ tokenizer.load("tokenizer.json")
 
 ## Output
 
-Production Hugging Face tokenizers are saved under `artifacts/tokenizers/hf_bpe/`:
+The current Hugging Face tokenizer presets save directly under `artifacts/tokenizers/`:
 
 ```
-artifacts/tokenizers/hf_bpe/
+artifacts/tokenizers/
 ├── tigrinya_tokenizer_8k.json
 ├── tigrinya_tokenizer_16k.json
 └── tigrinya_tokenizer_32k.json
 ```
 
+The destination is set by `tokenizer_path` in each tokenizer config.
 From-scratch tokenizer experiments are saved under `artifacts/tokenizers/from_scratch/`.
 
 ## Why BPE for Tigrinya?
