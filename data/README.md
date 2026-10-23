@@ -10,6 +10,8 @@ Prepares raw Tigrinya text sources into clean, deduplicated train/validation/tes
 | `loaders.py` | Loads each raw source format (Bible translations, QA parquets, plain text files) |
 | `build_dataset.py` | Orchestrates the full pipeline: load → clean → deduplicate → split → save |
 | `dataset_stats.py` | Dataset statistics, vocabulary frequency, duplicate checks, and wordcloud helpers |
+| `dataset.py` | `TigrinyaDataset`: sliding-window (input, target) pairs |
+| `dataloader.py` | DataLoader factory for single-GPU training |
 | `__init__.py` | Package exports for Phase 1 |
 
 ## Raw Data
@@ -60,8 +62,3 @@ datasets/training/
 ```
 
 The pipeline prints a full summary on completion including sentence counts and duplicates removed per split.
-
-## Coming Soon
-
-- `dataset.py`: PyTorch `TigrinyaDataset` and memory-mapped dataset for training
-- `dataloader.py`: DataLoader factories

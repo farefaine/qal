@@ -27,6 +27,9 @@ datasets/*
 # Model artifacts & checkpoints
 artifacts/*
 !artifacts/README.md
+!artifacts/pretrained/
+artifacts/pretrained/*
+!artifacts/pretrained/README.md
 !artifacts/tokenizers/
 artifacts/tokenizers/*
 !artifacts/tokenizers/README.md

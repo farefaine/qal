@@ -1,0 +1,13 @@
+# XLarge model - the production architecture (8L / 12H / 768D / 8K vocab)
+
+model:
+  vocab_size: 8192
+  context_length: 128
+  emb_dim: 768
+  n_heads: 12        # 64 dims per head
+  n_layers: 8
+  drop_rate: 0.1
+  qkv_bias: false
+
+metadata:
+  name: "tigrinya-gpt-xlarge"

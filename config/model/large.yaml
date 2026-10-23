@@ -1,0 +1,13 @@
+# Large model - largest tier
+
+model:
+  vocab_size: 8192
+  context_length: 128
+  emb_dim: 768
+  n_heads: 12        # 64 dims per head
+  n_layers: 6
+  drop_rate: 0.1      # blog range is 0.1-0.2; per-tier value comes from training runs
+  qkv_bias: false
+
+metadata:
+  name: "tigrinya-gpt-large"
