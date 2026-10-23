@@ -1,10 +1,11 @@
 # Training
 
-A minimal training loop for the Tigrinya GPT model: `train_simple.py`.
+`train_simple.py` is a minimal training loop for the Tigrinya GPT model.
 
-It is deliberately bare: AdamW, cross-entropy on next-token prediction, gradient
-clipping, a progress bar. No validation loss, LR schedule, gradient accumulation,
-mixed precision or multi-GPU. It shows the core loop end to end.
+This simple training loop is deliberately bare. It uses AdamW, cross-entropy on
+next-token prediction, gradient clipping and a progress bar. It has no validation
+loss, LR schedule, gradient accumulation, mixed precision or multi-GPU support.
+It shows the core loop end to end.
 
 ## Prerequisites
 

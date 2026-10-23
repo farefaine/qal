@@ -36,9 +36,9 @@ class TigrinyaDataset(Dataset):
     The dataset slides a window of size `max_length + 1` over the tokenized text with the
     specified `stride` (sequence overlap). Each window produces one input-target example.
 
-    Sentence boundaries: the corpus has one sentence per line and the tokenizer has no
-    end-of-text token. Newlines are dropped, but each sentence ends with the Tigrinya full
-    stop (`▁።`), which marks the boundary in the token stream. Windows may start mid-sentence
+    The corpus has one sentence per line and the tokenizer has no end-of-text token.
+    Newlines are dropped, but each sentence ends with the Tigrinya full stop (`▁።`),
+    which marks the sentence boundary in the token stream. Windows may start mid-sentence
     and run across boundaries, as in standard GPT-style pretraining.
 
     Args:
