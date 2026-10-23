@@ -8,7 +8,7 @@ Tigrinya language model pretraining: data pipeline, tokenization, training, and 
 |---|---|---|
 | 1 | `data/` | ✅ Complete |
 | 2 | `tokenization/` | ✅ Complete |
-| 3 | `model/` | Architecture implemented and published |
+| 3 | `model/` | ✅ Complete |
 | 4 | `training/` | Coming soon |
 | 5 | `inference/` | Coming soon |
 
