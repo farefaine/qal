@@ -4,7 +4,7 @@ A minimal training loop for the Tigrinya GPT model: `train_simple.py`.
 
 It is deliberately bare: AdamW, cross-entropy on next-token prediction, gradient
 clipping, a progress bar. No validation loss, LR schedule, gradient accumulation,
-mixed precision or multi-GPU. It exists to show the core loop end to end.
+mixed precision or multi-GPU. It shows the core loop end to end.
 
 ## Prerequisites
 
@@ -49,15 +49,3 @@ python training/train_simple.py
 | `--log-every` | `50` | Steps between loss/throughput refreshes |
 | `--seed` | `42` | Random seed |
 | `--out` | `artifacts/pretrained/simple_model.pt` | Where weights are saved |
-
-## What the loop does
-
-For each batch of `(input_ids, target_ids)`, where targets are the inputs shifted
-by one token:
-
-1. `model(x)` returns logits of shape `(batch, seq_len, vocab_size)`
-2. Logits and targets are flattened so each token position is one classification example
-3. `cross_entropy` gives the loss, `backward()` the gradients
-4. Gradients are clipped to norm 1.0, then AdamW updates the weights
-
-Weights are saved to `artifacts/pretrained/` (gitignored; see its README).
