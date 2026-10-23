@@ -3,7 +3,7 @@ Minimal training loop for the Tigrinya GPT model.
 
 This simple training loop is deliberately bare. It has no validation loss,
 LR schedule, gradient accumulation, mixed precision or multi-GPU support.
-The full trainer, covered in a later post, adds those.
+The full trainer with all the bells and whistles is coming soon.
 
 Usage:
     python training/train_simple.py
